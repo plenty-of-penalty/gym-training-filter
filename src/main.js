@@ -93,7 +93,10 @@ async function crawl() {
 		table += `|[${gym.id}](https://codeforces.com/gym/${gym.id})|${gym.title}||\n`;
 	}
 
-	await fs.promises.writeFile(path.join(__dirname, '../README.md'), template.replace('{{ table }}', table));
+	let markdown = template;
+	markdown = markdown.replace('{{ table }}', table);
+	markdown = markdown.replace('{{ length }}', '' + gyms.length);
+	await fs.promises.writeFile(path.join(__dirname, '../README.md'), markdown);
 }
 
 async function main(force = false) {

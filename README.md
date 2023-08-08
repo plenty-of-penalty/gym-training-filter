@@ -2,6 +2,10 @@
 
 队长为了给队员加训用心良苦
 
+### 加训清单
+
+共 77 场
+
 |ID|Title|Friends|
 |:-:|:-:|:-:|
 |[104491](https://codeforces.com/gym/104491)|43rd Petrozavodsk Programming Camp (2022 Summer) Day 7. HSE Koresha Contest||
