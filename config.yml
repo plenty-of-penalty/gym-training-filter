@@ -4,6 +4,7 @@ friends:
   - ZJU
   - Zhejiang U
   - 浙江大学
+  - 浙大
 
   - Solitary Dream
   - SolitaryDream
@@ -17,3 +18,8 @@ friends:
   - SSerxhs
   - qiqi20021026
   - Randias
+
+not_friends:
+  - ZJUT
+  - ZJUI
+  - 浙江大学城市学院

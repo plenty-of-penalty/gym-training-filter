@@ -71,10 +71,11 @@ async function crawl() {
 		data.id = id;
 		data.standings = standings;
 		data.friends = standings.filter((teamname) => {
+			for (const not_friend of config.not_friends) {
+				if (teamname.includes(not_friend)) { return false; }
+			}
 			for (const friend of config.friends) {
-				if (teamname.includes(friend)) {
-					return true;
-				}
+				if (teamname.includes(friend)) { return true; }
 			}
 			return false;
 		});
