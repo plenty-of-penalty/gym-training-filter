@@ -1,0 +1,26 @@
+{
+  "name": "gym-training-filter",
+  "version": "1.0.0",
+  "description": "队长为了给队员加训用心良苦",
+  "main": "src/main.js",
+  "scripts": {
+    "run": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plenty-of-penalty/gym-training-filter.git"
+  },
+  "keywords": [],
+  "author": "memset0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plenty-of-penalty/gym-training-filter/issues"
+  },
+  "homepage": "https://github.com/plenty-of-penalty/gym-training-filter#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "yaml": "^2.3.1"
+  }
+}

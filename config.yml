@@ -1,0 +1,5 @@
+query: ?filterDurationUpperBorder=300&filterDifficultyUpperBorder=5&filterDurationLowerBorder=300&searchByProblem=false&filterSeasonUpperBorder=2023-2024&filterContestFormat=ICPC&filterDifficultyLowerBorder=4&filterSeasonLowerBorder=2017-2018&order=ID_DESC
+
+friends:
+  - ZJU
+  - 浙江大学
