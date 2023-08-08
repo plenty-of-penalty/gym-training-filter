@@ -4,14 +4,15 @@
 
 ### 加训清单
 
-共 20 场
+共 21 场
 
 |ID|Title|Friends|
 |:-:|:-:|:-:|
 |[104491](https://codeforces.com/gym/104491)|43rd Petrozavodsk Programming Camp (2022 Summer) Day 7. HSE Koresha Contest|<li>Zhejiang U: Solitary Dream: Chen, Chu, Peng</li><li>Zhejiang U: Phantom Threshold: Li, Li, Tang</li><li>Zhejiang U: jiangly_fan: Hu, Lin, Ling</li>|
 |[104373](https://codeforces.com/gym/104373)|The 2021 ICPC Asia Macau Regional Contest|<li>Zhejiang University of Technology-Tekkadan</li><li>Zhejiang University of Science and Technology-Getting Better</li><li>Zhejiang University of Science & Technology-fansOfJYF</li><li>Zhejiang University of Science & Technology-sleeping in a jam</li>|
 |[104334](https://codeforces.com/gym/104334)|Osijek Competitive Programming Camp, Winter 2023, Day 9: Magical Story of LaLa (The 1st Universal Cup. Stage 14: Ranoa)|<li>Solitary Dream (Zhejiang University)</li>|
-|[104234](https://codeforces.com/gym/104234)|OCPC 2023, Oleksandr Kulkov Contest 3|<li>Untitled1 (Zhejiang University)</li><li>nameless story (Zhejiang University)</li><li>Solitary Dream (Zhejiang University)</li>|
+|[104234](https://codeforces.com/gym/104234)|OCPC 2023, Oleksandr Kulkov Contest 3|<li>Untitled1 (Zhejiang University)</li><li>Heltion (Universal Cup)</li><li>nameless story (Zhejiang University)</li><li>Solitary Dream (Zhejiang University)</li>|
+|[104197](https://codeforces.com/gym/104197)|Anton Trygub Contest 1 (The 1st Universal Cup, Stage 4: Ukraine)|<li>Heltion (Universal Cup)</li>|
 |[104172](https://codeforces.com/gym/104172)|The 2023 ICPC Asia Hong Kong Regional Programming Contest (The 1st Universal Cup, Stage 2:Hong Kong)|<li>Zhejiang University of Science and Technology-JiangNan Chicken</li><li>Zhejiang University of Science and Technology-sleeping in a jam</li>|
 |[103855](https://codeforces.com/gym/103855)|XXII Open Cup. Grand Prix of Seoul|<li>浙大：幽灵门槛 (Tang, Li, Li)</li><li>浙大：Solitary Dream (Peng, Chu, Chen)</li><li>浙大：Duckforces (Zhang, Lou, Guo)</li>|
 |[103687](https://codeforces.com/gym/103687)|The 19th Zhejiang Provincial Collegiate Programming Contest|<li>Heltion&l1l5&SSerxhs</li>|

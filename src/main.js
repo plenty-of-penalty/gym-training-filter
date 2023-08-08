@@ -71,11 +71,12 @@ async function crawl() {
 		data.id = id;
 		data.standings = standings;
 		data.friends = standings.filter((teamname) => {
+			teamname = teamname.toLowerCase();
 			for (const not_friend of config.not_friends) {
-				if (teamname.includes(not_friend)) { return false; }
+				if (teamname.includes(not_friend.toLowerCase())) { return false; }
 			}
 			for (const friend of config.friends) {
-				if (teamname.includes(friend)) { return true; }
+				if (teamname.includes(friend.toLowerCase())) { return true; }
 			}
 			return false;
 		});
