@@ -106,8 +106,7 @@ async function crawl() {
 	for (const gym of gyms) {
 		table += `|[${gym.id}](https://codeforces.com/gym/${gym.id})|${gym.title}|`;
 		for (let i = 0; i < gym.friends.length; i++) {
-			if (i) table += '<br>';
-			table += '* ' + gym.friends[i];
+			table += '<li>' + gym.friends[i] + '</li>';
 		}
 		table += '|\n';
 	}
