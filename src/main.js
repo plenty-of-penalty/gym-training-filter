@@ -42,7 +42,9 @@ async function crawlGym(id) {
 
 async function crawlStandings(id) {
 	const $ = await fetch(`/gym/${id}/standings`);
-	return [];
+	return Array.from($('.standings tr:not(:first-child):not(:last-child)').map(function () {
+		return $($(this).children('td')[1]).text().trim();
+	}));
 }
 
 async function crawl() {
@@ -66,12 +68,22 @@ async function crawl() {
 			crawlGym(id),
 			crawlStandings(id),
 		]);
-		console.log('crawling...', id);
 		data.id = id;
 		data.standings = standings;
+		data.friends = standings.filter((teamname) => {
+			for (const friend of config.friends) {
+				if (teamname.includes(friend)) {
+					return true;
+				}
+			}
+			return false;
+		});
+		console.log('crawling', id + ':', data.title);
 		gyms.push(data);
 	}
+
 	gyms = gyms.filter((data) => {
+		let legal = !!data.standings.length;
 		let has_solution = false;
 		for (const material of data.materials) {
 			if (material.toLowerCase().includes('(en)') || material.toLowerCase().includes('(ch)')) {
@@ -80,7 +92,9 @@ async function crawl() {
 				if (material.toLowerCase().includes('editorial')) { has_solution = true; }
 			}
 		}
-		return has_solution;
+		let has_friends = !!data.friends.length;
+
+		return legal && has_solution && has_friends;
 	});
 
 	for (const gym of gyms) {
@@ -90,7 +104,12 @@ async function crawl() {
 
 	let table = '|ID|Title|Friends|\n|:-:|:-:|:-:|\n';
 	for (const gym of gyms) {
-		table += `|[${gym.id}](https://codeforces.com/gym/${gym.id})|${gym.title}||\n`;
+		table += `|[${gym.id}](https://codeforces.com/gym/${gym.id})|${gym.title}|`;
+		for (let i = 0; i < gym.friends.length; i++) {
+			if (i) table += '<br>';
+			table += '* ' + gym.friends[i];
+		}
+		table += '|\n';
 	}
 
 	let markdown = template;
