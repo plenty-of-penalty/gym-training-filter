@@ -104,9 +104,9 @@ async function crawl() {
 	}
 	console.log('count:', gyms.length);
 
-	let table = '|ID|Title|Friends|\n|:-:|:-:|:-:|\n';
+	let table = '|Contest|Friends|\n|:-:|:-:|\n';
 	for (const gym of gyms) {
-		table += `|[${gym.id}](https://codeforces.com/gym/${gym.id})|${gym.title}|`;
+		table += `|[${gym.title} (${gym.id})](https://codeforces.com/gym/${gym.id})|`;
 		for (let i = 0; i < gym.friends.length; i++) {
 			table += '<li>' + gym.friends[i] + '</li>';
 		}
