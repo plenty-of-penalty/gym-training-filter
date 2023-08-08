@@ -1,34 +1,9 @@
 query: ?filterDurationUpperBorder=300&filterDifficultyUpperBorder=5&filterDurationLowerBorder=300&searchByProblem=false&filterSeasonUpperBorder=2023-2024&filterContestFormat=ICPC&filterDifficultyLowerBorder=4&filterSeasonLowerBorder=2017-2018&order=ID_DESC
-
 friends:
   - ZJU
   - Zhejiang U
   - 浙江大学
   - 浙大
-
-  - 业余门槛
-
-  - 虚空之梦
-  - Solitary Dream
-  - SolitaryDream
-  - destination
-  - pb0207
-  - cxt
-  - veckoper
-  - Eden_CY
-
-  - 幽灵乐团
-  - 幽灵门槛
-  - Phantom Ensemble
-  - Suika_predator
-  - lwn_16
-  - lxlxl
-
-  - nameless story
-  - SSerxhs
-  - qiqi20021026
-  - Randias
-
 not_friends:
   - ZJUT
   - ZJUI
